@@ -42,8 +42,8 @@ h3 {
     left: 100px;
     cursor: pointer !important;
     display: none;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background-color: red;
 }
 

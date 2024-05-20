@@ -2,7 +2,13 @@ import { useState } from 'react'
 import React from 'react'
 import './header.css'
 
-const header = ({ start, setStart, time, setTime }) => {
+const header = ({
+    start,
+    setStart,
+    time,
+    setTime,
+    setRestHandler
+}) => {
 
 
     const starthandler = () => {
@@ -36,7 +42,10 @@ const header = ({ start, setStart, time, setTime }) => {
             >
                 Pause
             </button>
-            <button className='header-btn'>Reset</button>
+            <button className='header-btn'
+
+                onClick={() => setRestHandler()}
+            >Reset</button>
             <div>
                 <input
                     onChange={(e) => setTime(e.target.value)}
